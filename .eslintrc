@@ -3,9 +3,21 @@
   "parserOptions": {
     "ecmaVersion": 2018
   },
-  "extends": ["eslint:recommended", "eslint-config-prettier"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+
+  "extends": [
+    "eslint:recommended",
+    "eslint-config-prettier",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
   "rules": {
-    "no-console": "off"
+    "no-console": "off",
+    "react/react-in-jsx-scope": "off"
   },
   "env": {
     "browser": true,
