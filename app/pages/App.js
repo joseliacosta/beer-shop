@@ -1,10 +1,7 @@
 import React from 'react'
-import GlobalStyles from './styles/global'
-import styled from 'styled-components'
+import GlobalStyles from '../styles/global'
+import Header from '../components/Header'
 
-const Header = styled.header`
-  background: red;
-`
 const App = () => {
   return (
     <>
